@@ -50,7 +50,7 @@ class Student{
             found=1;
             break;
         }
-        if(found=0){
+        if(found==0){
             cout<<"\nStudent Not found!\n";
         }
     }
