@@ -21,7 +21,7 @@ The Student Management System is a C++ application that manages student records 
 1. Download or clone this repository.
 2. Open the project folder in VS Code.
 3. Compile the program:
-   `g++ -std=c++14 student.cpp -o student`
+   `g++ -std=c++14 studentmanagement.cpp -o student`
 4. Run the program:
    `.\student`
 
