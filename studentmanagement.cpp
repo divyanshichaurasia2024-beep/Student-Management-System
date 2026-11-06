@@ -2,6 +2,7 @@
 #include<string>
 #include<fstream>
 #include<iomanip>
+#include<sstream>
 using namespace std;
 
 class Student{
@@ -191,7 +192,14 @@ class Student{
         cout<<"8.Exit\n";
 
         cout<<"\n Enter Your Choice:";
-        cin>>choice;
+        string input;
+        char extra;
+        getline(cin>>ws,input);
+        stringstream ss(input);
+
+        if(!(ss>>choice)||(ss>>extra)){
+            choice=0;
+        }
 
         switch(choice){
             case 1:
@@ -230,8 +238,9 @@ class Student{
             break;
 
             case 8:
+             s[0].saveRecords(s,n);   
             cout<<"\nExiting Program...\n";
-            break;
+            return 0;
 
             default:
             cout<<"\n Invalid Choice!\n";
