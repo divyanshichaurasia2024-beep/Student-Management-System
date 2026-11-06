@@ -128,7 +128,7 @@ class Student{
     cin>>searchRoll;
     for(int i=0; i<n; i++){
         if(s[i].getrollNo()==searchRoll){
-            cout<<"\nStudent Nmae:"<<s[i].name;
+            cout<<"\nStudent Name:"<<s[i].name;
             cout<<"\nMarks: "<<s[i].marks;
             cout<<"\n Grade:"<<s[i].calculateGrade()<<endl;
             found=1;
