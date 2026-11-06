@@ -13,14 +13,14 @@ class Student{
      
     public:
     void addStudent(){
-        cout<<"enter roll number:";
+        cout<<"Enter Roll Number:";
         cin>>rollNo;
         cin.ignore(20,'\n');
-        cout<<"enter name:";
+        cout<<"Enter Name:";
         getline(cin,name);
-        cout<<"enter age:";
+        cout<<"Enter Age:";
         cin>>age;
-        cout<<"enter marks:";
+        cout<<"Enter Marks:";
         cin>>marks;
         cout<<"\nStudent Added successfully!\n";
     }
